@@ -47,20 +47,20 @@ activity-system
 - JDK 1.8（JAVA_HOME 已配置）
 - Maven 3.6+（配置了阿里云镜像加速）
 - Node.js 14~20（本项目验证于 Node 20）
-- MySQL 8.0 本机服务已启动，root 密码：`123456`
+- MySQL 8.0 本机服务已启动，root 密码：`#####`
 
 ## 四、启动步骤
 
 ### 1. 初始化数据库（首次）
 
 ```bash
-mysql -uroot -p123456 --default-character-set=utf8mb4 -e "source D:/doubao/activity-system/sql/init.sql"
+mysql -u -p --default-character-set=utf8mb4 -e "source /activity-system/sql/init.sql"
 ```
 
 ### 2. 启动后端（端口 8080）
 
 ```bash
-cd D:\doubao\activity-system\backend
+cd #项目位置
 mvn spring-boot:run
 ```
 
@@ -69,7 +69,7 @@ mvn spring-boot:run
 ### 3. 启动前端（端口 8081）
 
 ```bash
-cd D:\doubao\activity-system\frontend
+cd #项目位置
 npm install        # 首次
 npm run serve
 ```
@@ -79,7 +79,7 @@ npm run serve
 ### 4. 生产构建（可选）
 
 ```bash
-cd D:\doubao\activity-system\frontend
+cd #项目位置
 npm run build      # 产物输出到 frontend/dist
 ```
 
@@ -87,7 +87,7 @@ npm run build      # 产物输出到 frontend/dist
 
 **前提**：MySQL 服务已启动（`services.msc` 中 mysql 状态为"正在运行"），数据库已初始化。
 
-1. VS Code 打开文件夹 `D:\doubao\activity-system`（整个项目根目录）；
+1. VS Code 打开文件夹 （整个项目根目录）；
 2. 安装插件：`Extension Pack for Java`（Java 运行）、`Vetur`（Vue2 语法）、`Database Client`（可选，查库）；
 3. 打开终端（Ctrl + `）启动后端：
    ```bash
@@ -109,13 +109,13 @@ npm run build      # 产物输出到 frontend/dist
 
 ## 六、IntelliJ IDEA 配置指南
 
-**前提**：JDK 1.8（`C:\Program Files\Java\jdk1.8.0_202`）、Maven（`D:\doubao\tools\apache-maven-3.9.16`）、MySQL 服务运行中。
+**前提**：JDK 1.8（`你的JDK安装的位置`）、Maven（`#下载`）、MySQL 服务运行中。
 
-1. `File → Open` 选择 `D:\doubao\activity-system\backend` 目录，首次打开点 **Load Maven Project** 等待依赖下载；
+1. `File → Open` 选择 `` 目录，首次打开点 **Load Maven Project** 等待依赖下载；
 2. 配置 JDK：`File → Project Structure` → Project → SDK 选择 `jdk1.8.0_202`，Language level 选 **8**（Modules 里同样设为 8）；
-3. 配置 Maven：`File → Settings → Build Tools → Maven` → Maven home path 填 `D:\doubao\tools\apache-maven-3.9.16`，User settings file 勾选 Override 填同目录 `conf\settings.xml`（含阿里云镜像）；
+3. 配置 Maven：`File → Settings → Build Tools → Maven` → Maven home path 填 ``，User settings file 勾选 Override 填同目录 `conf\settings.xml`（含阿里云镜像）；
 4. 运行后端：打开 `com.activity → ActivityApplication.java`，右键 → **Run 'ActivityApplication'**，控制台出现 `Started ActivityApplication` 即成功（端口 8080）；
-5. 运行前端：点底部 `Terminal`（Alt+F12）执行 `cd D:\doubao\activity-system\frontend` 后 `npm run serve`，浏览器访问 **http://localhost:8081**。
+5. 运行前端：点底部 `Terminal`（Alt+F12）执行 `cd 你的项目位置` 后 `npm run serve`，浏览器访问 **http://localhost:8081**。
 
 常见问题：
 - 端口 8080 被占用：当前有服务在运行，先结束旧进程再启动；
