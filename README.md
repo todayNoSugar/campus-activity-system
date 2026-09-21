@@ -172,15 +172,16 @@ MySQL 连接串携带 `serverTimezone=Asia/Shanghai&useUnicode=true&characterEnc
 
 
 ## 项目演示截图
-![截图1](./1.png)
-![截图2](./2.png)
-![截图3](./3.png)
-![截图4](./4.png)
-![截图5](./5.png)
-![截图6](./6.png)
+<img src="./1.png" width="700"/>
+<img src="./2.png" width="700"/>
+<img src="./3.png" width="700"/>
+<img src="./4.png" width="700"/>
+<img src="./5.png" width="700"/>
+<img src="./6.png" width="700"/>
 
 ## 技术交流
-![联系方式](./7.jpg)
+<img src="./7.jpg" width="400"/>
 > 仅用于源码技术交流学习
+
 
 
