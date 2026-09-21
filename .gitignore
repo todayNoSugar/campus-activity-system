@@ -1,0 +1,14 @@
+# Java后端
+target/
+.idea/
+*.iml
+out/
+*.sql
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+
+# 系统文件
+.DS_Store
+Thumbs.db
