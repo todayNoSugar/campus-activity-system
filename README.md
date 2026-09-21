@@ -170,17 +170,16 @@ MySQL 连接串携带 `serverTimezone=Asia/Shanghai&useUnicode=true&characterEnc
 - [x] 权限隔离：学生访问后台接口返回 403，未登录返回 401
 
 
-
 ## 项目演示截图
-<img src="./1.png" width="700"/>
-<img src="./2.png" width="700"/>
-<img src="./3.png" width="700"/>
-<img src="./4.png" width="700"/>
-<img src="./5.png" width="700"/>
-<img src="./6.png" width="700"/>
+<img src="./1.png" style="max-width:700px;width:100%;" />
+<img src="./2.png" style="max-width:700px;width:100%;" />
+<img src="./3.png" style="max-width:700px;width:100%;" />
+<img src="./4.png" style="max-width:700px;width:100%;" />
+<img src="./5.png" style="max-width:700px;width:100%;" />
+<img src="./6.png" style="max-width:700px;width:100%;" />
 
 ## 技术交流
-<img src="./7.jpg" width="400"/>
+<img src="./7.jpg" style="max-width:400px;width:100%;" />
 > 仅用于源码技术交流学习
 
 
