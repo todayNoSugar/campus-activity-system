@@ -179,13 +179,13 @@ MySQL 连接串携带 `serverTimezone=Asia/Shanghai&useUnicode=true&characterEnc
 <img src="./6.png" style="max-width:700px;width:100%;" />
 
 ## 技术交流
-<img src="./7.jpg" style="max-width:400px;width:100%;" />
+<img src="./7.jpg" style="auto;" />
 
 > 仅用于源码技术交流学习
 
 
 ##公众号
-<img src="./8.jpg" style="max-width:400px;width:100%;" />
+<img src="./8.jpg" style="auto;" />
 
 
 
